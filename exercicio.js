@@ -23,6 +23,14 @@ console.log(apps[0]);
 
 // EXERCICIO 1: use reduce() para calcular o numero total de installs para todas as apps.
 
+totalInstalls = apps.reduce((anterior, atual) => {
+    //console.log("Anterior: " + anterior);
+    //console.log("Atual: " + atual.installs);
+    return anterior + atual.installs
+    
+},0);
+
+//console.log("Total Installs: " + totalInstalls);
 
 // EXERCICIO 2: use filter() para selecionar somente apps com score maior que quatro (> 4) 
 
